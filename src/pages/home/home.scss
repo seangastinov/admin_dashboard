@@ -1,0 +1,11 @@
+//must npm install sass
+//scss allowed to make nested css
+
+.home{
+  display: flex; //make container from vertical to horizontal
+
+  .homeContainer{
+    background-color: aliceblue;
+    flex: 6; //proportion of the column between child in home container
+  }
+}

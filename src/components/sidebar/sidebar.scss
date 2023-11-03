@@ -1,0 +1,35 @@
+.sidebar{
+    background-color: aliceblue;
+    flex: 1;
+    border-right: 1.5px solid black;
+    min-height: 100vh;
+
+
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: darkblue;
+        }
+    }
+
+    hr{
+        height: 0;
+        border: 1.5px solid black;
+    }
+
+    .center{
+        padding-left: 10px;
+
+        ul{ //for list inside div center
+            list-style: None;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
