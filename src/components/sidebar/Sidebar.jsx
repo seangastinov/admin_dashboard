@@ -1,4 +1,3 @@
-import React from 'react';
 import './sidebar.scss';
 import SpaceDashboardRoundedIcon from '@mui/icons-material/SpaceDashboardRounded';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';

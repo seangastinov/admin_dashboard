@@ -1,4 +1,3 @@
-import React from 'react';
 import './navbar.scss';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';

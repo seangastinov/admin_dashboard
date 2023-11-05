@@ -1,4 +1,3 @@
-import React from 'react';
 import "./widget.scss"
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
