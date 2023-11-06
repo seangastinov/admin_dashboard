@@ -1,3 +1,96 @@
 .new{
+  display:flex;
+  width: 100%;
+  background-color: aliceblue;
+  .newContainer{
+    flex:6;
 
+    .top, .bottom{
+      padding: 10px;
+      -webkit-box-shadow: 2px 4px 10px 1px black;
+      box-shadow: 2px 4px 10px 1px gray;
+      border-radius: 10px;
+      margin: 20px;
+      display: flex;
+
+      .title{
+        font-size: 20px;
+        color: grey;
+      }
+
+      .left{
+        flex:1;
+        text-align: center;
+        .image{
+          margin-top: 15px;
+          padding: 10px;
+          border-radius: 50%;
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+
+      .right{
+        flex:2;
+
+        form{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          justify-content: space-around;
+
+          .formInputImage {
+            width: 40%;
+
+            label {
+              display: flex;
+              flex-direction: column;
+              gap: 10px; //gap between icon and label text
+              padding: 5px;
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+            input{
+              display: none;
+            }
+          }
+
+          .formInput{
+            width: 40%;
+            label{
+              display: flex;
+              align-items: center;
+              gap: 10px; //gap between icon and label text
+              padding: 5px;
+            }
+
+            input{
+              width: 100%;
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid lightgray;
+            }
+          }
+
+          .createButton{
+            width: 150px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            cursor: pointer;
+            &:hover{
+              background-color: #004f00;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
 }
