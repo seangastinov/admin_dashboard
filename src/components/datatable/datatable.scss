@@ -1,0 +1,68 @@
+.datatable{
+  height: 600px;
+  padding: 20px;
+  width: 100%;
+
+  .userWithImg{
+    display: flex;
+    align-items: center;
+
+    .image{
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+  }
+
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    &.Pending{
+      background-color: #ffffc6;
+      color: goldenrod;
+    }
+    &.Active{
+      color: green;
+      background-color: #c6ffc6;
+    }
+
+    &.Passive{
+        color: #ff2c2c;
+        background-color: #ffc6c6;
+    }
+  }
+
+  .cellAction{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .edit{
+      background-color: #c6ffc6;
+      border-radius: 8px;
+      padding: 5px 24px;
+      border:1px solid lightgray;
+      color: green;
+      cursor: pointer;
+        &:hover{
+            background-color: darkseagreen ;
+        }
+    }
+
+    .delete{
+      border-radius: 8px;
+      padding: 5px 18px;
+      border:1px solid lightgray;
+      background-color: #ffc6c6;
+      color: #ff2c2c;
+      cursor: pointer;
+      &:hover {
+        background-color: #ff7a7a;
+      }
+    }
+  }
+}
