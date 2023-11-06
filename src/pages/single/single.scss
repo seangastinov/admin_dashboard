@@ -1,3 +1,99 @@
 .single{
+  display: flex;
+  background-color: aliceblue;
+  width: 100%;
+  .singleContainer{
+    flex:6;
 
+    .top{
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .left{
+        padding: 20px;
+        flex: 1;
+        -webkit-box-shadow: 2px 4px 10px 1px black;
+        box-shadow: 2px 4px 10px 1px gray;
+        position: relative;
+        border-radius: 10px;
+
+        .editButton{
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: lightgray;
+          color: #262626;
+          padding:4px 8px;
+          cursor: pointer;
+          border: 1px solid lightgray;
+          border-bottom-left-radius: 5px;
+          border-top-right-radius: 5px;
+          &:hover{
+            background-color: gray;
+            border: 1px solid gray;
+          }
+        }
+
+        .title{
+          margin-top: -12px;
+          margin-bottom: 10px;
+          font-size: 30px;
+          color: rgba(0, 0, 0, 0.76);
+        }
+
+        .item{
+          display: flex;
+          gap:20px;
+          align-items: center;
+
+          .itemImg{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .details{
+
+            .itemTitle{
+              font-size: 20px;
+              margin-bottom: 10px;
+              color: rgba(0, 0, 0, 0.68);
+            }
+
+            .detailItem{
+              margin-bottom: 10px;
+
+              .itemKey{
+                font-weight: bold;
+                margin-right: 5px;
+                color: rgba(0, 0, 0, 0.68);
+              }
+
+              .itemValue{
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+      .right{
+        flex: 2;
+      }
+    }
+
+    .bottom{
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px 20px;
+      -webkit-box-shadow: 2px 4px 10px 1px black;
+      box-shadow: 2px 4px 10px 1px gray;
+
+      .title{
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

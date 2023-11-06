@@ -7,7 +7,7 @@ const Datatable = () => {
         field: "action",
         headerName: "Action",
         width: 200,
-        renderCell: (params) => {
+        renderCell: () => {
             return (
                 <div className={"cellAction"}>
                     <button className={"edit"}>Edit</button>
