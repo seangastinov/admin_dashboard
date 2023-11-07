@@ -11,30 +11,41 @@ import MedicalInformationRoundedIcon from '@mui/icons-material/MedicalInformatio
 import TuneRoundedIcon from '@mui/icons-material/TuneRounded';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import AccountBoxRoundedIcon from '@mui/icons-material/AccountBoxRounded';
+import { Link } from "react-router-dom";
+// import {SpaceDashboardRoundedIcon,PeopleAltRoundedIcon, Inventory2RoundedIcon ,SellRoundedIcon, LocalShippingRoundedIcon, InsightsRoundedIcon, NotificationsActiveRoundedIcon, MonitorHeartRoundedIcon, MedicalInformationRoundedIcon, TuneRoundedIcon, LogoutRoundedIcon,AccountBoxRoundedIcon} from "@mui/icons-material";
 
 const Sidebar = () => {
+
     return (
         <div className={"sidebar"}>
             <div className={"top"}>
-                <span className={"logo"}>Admin</span>
+                <Link to={"/"} style={{textDecoration: "none"}}>
+                    <span className={"logo"}>Admin</span>
+                </Link>
             </div>
             <hr />
             <div className={"center"}>
                 <ul>
                     <p className={"title"}>MAIN</p>
-                    <li>
-                        <SpaceDashboardRoundedIcon className={"icon"}/>
-                        <span>Dashboard</span>
-                    </li>
+                    <Link to={"/"} style={{textDecoration: "none"}}>
+                        <li>
+                            <SpaceDashboardRoundedIcon className={"icon"}/>
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>
                     <p className={"title"}>LISTS</p>
-                    <li>
-                        <PeopleAltRoundedIcon className={"icon"}/>
-                        <span>Users</span>
-                    </li>
-                    <li>
-                        <Inventory2RoundedIcon className={"icon"}/>
-                        <span>Products</span>
-                    </li>
+                    <Link to={"/users"} style={{textDecoration: "none"}}>
+                        <li>
+                            <PeopleAltRoundedIcon className={"icon"}/>
+                            <span>Users</span>
+                        </li>
+                    </Link>
+                    <Link to={"/products"} style={{textDecoration: "none"}}>
+                        <li>
+                            <Inventory2RoundedIcon className={"icon"}/>
+                            <span>Products</span>
+                        </li>
+                    </Link>
                     <li>
                         <SellRoundedIcon className={"icon"}/>
                         <span>Orders</span>

@@ -1,9 +1,26 @@
 .datatable{
   height: 600px;
   padding: 20px;
-  width: 100%;
+  width: 96%;
 
-  .userWithImg{
+  .datatableTitle{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    .edit{
+      background-color: #c6ffc6;
+      border-radius: 8px;
+      padding: 5px 24px;
+      border:1px solid lightgray;
+      color: green;
+      cursor: pointer;
+      &:hover{
+        background-color: darkseagreen ;
+      }
+    }
+  }
+  .userWithImg, .productWithImg{
     display: flex;
     align-items: center;
 
@@ -25,14 +42,17 @@
       background-color: #ffffc6;
       color: goldenrod;
     }
-    &.Active{
+    &.Active, &.In-Stock{
       color: green;
       background-color: #c6ffc6;
     }
 
-    &.Passive{
+    &.Passive, &.Out-of-Stock{
         color: #ff2c2c;
         background-color: #ffc6c6;
+    }
+    &.Out-of-Stock, &.In-Stock{
+      width: 100px;
     }
   }
 
@@ -41,21 +61,21 @@
     gap: 20px;
     align-items: center;
 
-    .edit{
-      background-color: #c6ffc6;
+    .view{
+      background-color: lightgrey;
       border-radius: 8px;
       padding: 5px 24px;
-      border:1px solid lightgray;
-      color: green;
+      border:1px solid aliceblue;
+      color: black;
       cursor: pointer;
         &:hover{
-            background-color: darkseagreen ;
+            background-color: gray ;
         }
     }
 
     .delete{
       border-radius: 8px;
-      padding: 5px 18px;
+      padding: 5px 24px;
       border:1px solid lightgray;
       background-color: #ffc6c6;
       color: #ff2c2c;
