@@ -15,7 +15,6 @@ function App() {
                 <Route path="/">
                     {/*this is the default path localhost:3000 will give component Home /*/}
                     <Route index element={<Home />} />
-
                     {/*this is localhost:3000/login gives component Login /*/}
                     <Route path = "login" element={<Login />} />
                     <Route path = "users">
